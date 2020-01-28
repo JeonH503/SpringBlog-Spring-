@@ -14,7 +14,7 @@
 			<h6>ID</h6>
 			<input type="text" name = "vusername" class="vusernameWindow"/>
 			<h6>PASSWORD</h6>
-			<input type="text" name = "vpassword" class="vpasswordWindow"/>
+			<input type="password" name = "vpassword" class="vpasswordWindow"/>
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/><br/>
 			<c:if test="${not empty SPRING_SECURITY_LAST_EXCEPTION}">
 			    <font color="red">

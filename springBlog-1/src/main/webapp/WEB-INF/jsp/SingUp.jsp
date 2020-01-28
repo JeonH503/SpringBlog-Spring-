@@ -37,9 +37,9 @@
 			    </font>
 			</c:if>
 			<h6>PASSWORD</h6>
-			<input name = "vpassword" class = "vpassword"/>
+			<input type="password" name = "vpassword" class = "vpassword"/>
 			<h6>PASSWORD CHEACK</h6>
-			<input name = "vpasswordChk" class = "vpasswordChk"/>	
+			<input type="password" name = "vpasswordChk" class = "vpasswordChk"/>	
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/> 
 			<input type="submit" class="singUpBtn" value="회원가입"/>
 		</form>
