@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.myinfo{
+	text-align:center;
+	padding : 10px 0px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin:10px 5px;
+	background-color: white;
+}
+
+.profileImg{
+    width: 70px;
+    height:70px;
+    border-radius: 35px;
+} 
+
+.github{
+	font-weight:bold;
+	text-decoration: none;
+	color:black;
+}

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+body{
+	background-color: #ecf0f1;
+}
+
+.wrap{
+	margin:110px auto;
+	width:60%;
+	display:flex;
+}
+
+.posts{
+	width:65%;
+}
+
+.post{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	margin:10px 5px;
+	background-color: white;
+}
+
+.postTop{
+	display:flex;
+	padding:5px 0px 20px 20px;
+}
+
+.postFooter{
+	display:flex;
+}
+
+.tag{
+	padding:0px 20px;
+}
+
+.title{
+	padding:0px 0px 0px 20px;
+	color:black;
+	text-decoration: none;
+	width:60%;
+	margin : 0px;
+}
+
+.side{
+	width:35%;
+}
+
+.postImg{
+	margin:0px;
+	width:80px;
+	height:80px;
+}
+
+.postImg Img{
+	padding:20px 0px 0px 0px;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.tag{
+	text-align: left;
+}
+
+.tag a {
+	color:black;
+}
+
+.navi{
+	padding : 10px 0px;
+}
+
+.postFooter .tag{
+	color:black;
+	text-decoration: none;
+}

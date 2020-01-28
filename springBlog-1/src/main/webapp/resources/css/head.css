@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.head{
+	position: absolute;
+	overflow:hidden;
+	top:0;
+	left: 0;
+	width: 100%;
+	padding:10px 0px;
+	background: linear-gradient( to right, #1BCEDF, #5B247A );
+	text-align: center;
+}
+
+.name{
+	color:white;
+	text-decoration: none;
+}
+
+
+.headNavi{
+	position:absolute;
+	top:10px;
+	right: 15px;
+}
+
+.headNavi a{
+	font-weight:bold;
+	color:white;
+	text-decoration: none;	
+}

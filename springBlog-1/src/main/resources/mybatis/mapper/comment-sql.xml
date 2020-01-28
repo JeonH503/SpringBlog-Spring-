@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="commentMapper">
+ <select id="selectComment" resultType="java.util.Map">
+   select * from comments where boardNo = #{postNo} ORDER BY ddatetime DESC;
+ </select>
+ <insert id="insertComment">
+ 	insert into comments values(null,#{boardNo},#{comment},#{vusername},now());
+ </insert>
+ <delete id="deleteComment">
+ 	delete from comments where ino = #{ino};
+ </delete>
+ <update id="updateComment">
+ 	update comments
+ 	set comment = #{comment}
+ 	where ino = #{ino};
+ </update>
+</mapper>  

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+	background-color: white;
+}
+
+.postWrap{
+	margin:110px auto;
+	background-color:white;
+	width:40%;
+}
+
+.title{
+	text-align: center;
+}

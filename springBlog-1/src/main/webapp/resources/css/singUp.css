@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+	background-color: #ecf0f1;
+}
+
+.singUpWrap{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	padding:5px 0px 20px 35px;
+	background-color:white;
+	width:13%;
+	margin:100px auto;
+}
+
+.singUpBtn{
+	margin-top:25px;
+}
+
+.vusername{
+	width:80%;
+}
+
+.vpassword{
+	width:80%;
+}
+
+.vpasswordChk{
+	width:80%;
+}
