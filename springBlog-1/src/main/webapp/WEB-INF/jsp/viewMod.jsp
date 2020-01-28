@@ -1,8 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="UTF-8">
 	<title>JJH's Blog</title>
     <script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
@@ -10,7 +12,7 @@
 <body>
 	<form method="post" action="/postModConfirm">
 		제목 : <input name = "vtitle" id="vtitle" size=80 value="${postData.vtitle }"/><br/>
-		내용 : <textarea name = "vcontents" id="vcontents" size=80></textarea><br/>
+		내용 : <textarea name = "vcontents" id="vcontents" size=80 value=${postData.vcontents }></textarea><br/>
 		태그 : <input name = "vtag" id="vtag" size=80 value="${postData.vtag }"/><br/>
 		<input type = "hidden" name = "ino" value="${postData.ino }"/>
 		<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
@@ -20,7 +22,7 @@
 			CKEDITOR.replace( 'vcontents', {//해당 이름으로 된 textarea에 에디터를 적용
 				width:'100%',
 				height:'400px',
-				filebrowserImageUploadUrl: '/file/ckeditorImageUpload' //여기 경로로 파일을 전달하여 업로드 시킨다.
+				filebrowserImageUploadUrl: '<c:url value="/file/ckeditorImageUpload" />?${_csrf.parameterName}=${_csrf.token}'
 		    });
 			
 			CKEDITOR.on('dialogDefinition', function( ev ){

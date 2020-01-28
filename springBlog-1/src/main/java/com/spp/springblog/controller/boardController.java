@@ -77,9 +77,19 @@ public class boardController {
 	}
 	
 	@RequestMapping(value="/postModConfirm",method = RequestMethod.POST)
-	public String modifyConfirm(boardVO boardVO,HttpServletRequest request) {
+	public String modifyConfirm(boardVO boardVo,HttpServletRequest request) {
 		String postNo = request.getParameter("ino");
-		boardService.update(boardVO);
+		String imgTag = null;
+		Pattern pattern  =  Pattern.compile("<img[^>]*src=[\"']?([^>\"']+)[\"']?[^>]*>");
+		String content = boardVo.getVcontents();
+		Matcher match = pattern.matcher(content);
+		if(match.find()){ 
+		    imgTag = match.group(0);
+		    boardVo.setVfirstimg(imgTag);
+		} else {
+			 boardVo.setVfirstimg("<img alt=\"\" src=\"/resources/image/no-img.jpg\"/>");
+		}
+		boardService.update(boardVo);
 		return "redirect:/post?postNo="+postNo;
 	}
 	

@@ -12,8 +12,6 @@
 	<div class="postWrap">
 		<h2 class="title">${postData.vtitle}</h2>
 		<p class="content">${postData.vcontents}</p>
-		<a href="/postMod?postNo=${postData.ino}">수정</a>
-		<a href="/postDel?postNo=${postData.ino}">삭제</a>
 		<jsp:include page="comment.jsp"></jsp:include>
 	</div>
 	
