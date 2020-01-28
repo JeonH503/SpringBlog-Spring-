@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="\resources\css\viewList.css" rel="stylesheet">
-	<title>Insert title here</title>
+	<title>JJH's Blog</title>
 </head>
 <body>
 	<jsp:include page="head.jsp"></jsp:include>

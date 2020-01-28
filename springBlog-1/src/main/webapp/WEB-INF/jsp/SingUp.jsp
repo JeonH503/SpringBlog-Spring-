@@ -6,7 +6,7 @@
 <head>
 <link href="\resources\css\singUp.css" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>JJH's Blog</title>
 <script>
 	function chk(){
 		if (!document.SingUpForm.vusername.value){

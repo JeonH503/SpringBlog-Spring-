@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
+	<title>JJH's Blog</title>
     <script type="text/javascript" src="/resources/ckeditor/ckeditor.js"></script>
 </head>
 <body>

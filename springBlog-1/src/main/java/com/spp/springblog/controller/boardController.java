@@ -82,4 +82,6 @@ public class boardController {
 		boardService.update(boardVO);
 		return "redirect:/post?postNo="+postNo;
 	}
+	
+	
 }

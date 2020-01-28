@@ -22,7 +22,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		http.headers().frameOptions().disable()
 				.and()
 			.authorizeRequests()
-				.antMatchers("/","/post","/user/login","/user/singUp","/user/singUpConfirm").permitAll()//web의 css,자바시크립트들도 허용 필요
+				.antMatchers("/","/post","/user/login","/user/singUp","/user/singUpConfirm").permitAll()
+				.antMatchers("/write","/postDel","/postMod").hasRole("ADMIN")
 				.anyRequest().authenticated()
 				.and()
 			.logout()

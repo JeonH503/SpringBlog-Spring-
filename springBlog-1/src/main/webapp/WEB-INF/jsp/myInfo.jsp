@@ -5,7 +5,6 @@
 <head>
 <link href="\resources\css\myInfo.css" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
 	<div class="myinfo">

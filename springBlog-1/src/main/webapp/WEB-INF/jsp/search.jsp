@@ -5,7 +5,6 @@
 <head>
 <link href="\resources\css\search.css" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Insert title here</title>
 </head>
 <body>
 	<div class="search">

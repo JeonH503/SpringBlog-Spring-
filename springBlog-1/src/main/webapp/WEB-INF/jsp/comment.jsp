@@ -6,7 +6,6 @@
 <head>
 	<link href="\resources\css\commentModal.css" rel="stylesheet">
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
 	<script>
 		function commentChk(){
 			if (!document.commentForm.comment.value){

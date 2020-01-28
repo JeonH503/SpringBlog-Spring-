@@ -5,7 +5,7 @@
 <head>
 <link href="\resources\css\viewDetailes.css" rel="stylesheet">
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>JJH's Blog</title>
 </head>
 <body>
 	<jsp:include page="head.jsp"></jsp:include>

@@ -6,7 +6,6 @@
 <head>
 <meta charset="UTF-8">
 <link href="\resources\css\navi.css" rel="stylesheet">
-<title>Insert title here</title>
 </head>
 <body>
 	<div class="navi">
