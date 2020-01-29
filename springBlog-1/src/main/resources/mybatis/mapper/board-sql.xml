@@ -20,7 +20,7 @@
    select * from boards where ino = #{ino};
  </select>
  <insert id="insertBoard">
- 	insert into boards values(1,#{vtitle},#{vcontents},#{vtag},now(),#{vfirstimg});
+ 	insert into boards values(null,#{vtitle},#{vcontents},#{vtag},now(),#{vfirstimg});
  </insert>
  <delete id="deleteBoard">
  	delete from boards where ino = #{ino};
