@@ -5,13 +5,13 @@
   
 <mapper namespace="boardMapper">
  <select id="selectBoard" resultType="java.util.Map">
-   select * from boards;
+   select * from boards order by ddatetime desc;
  </select>
  <select id="selectTagList" resultType="java.util.Map">
    select vtag,count(*) as count from boards group by vtag;
  </select>
  <select id="searchBoard" resultType="java.util.Map">
-   select * from boards where vcontents like #{search} or vtitle like #{search};
+   select * from boards where vcontents like #{search} or vtitle like #{search} order by ddatetime desc;
  </select>
   <select id="selectTag" resultType="java.util.Map">
    select * from boards where vtag = #{tag};
